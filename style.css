@@ -1,0 +1,13 @@
+body {
+  font-family: Arial;
+}
+h1,h2 {
+  color: #111;
+}
+.card {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
