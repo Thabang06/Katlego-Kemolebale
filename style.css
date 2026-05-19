@@ -256,3 +256,39 @@ footer{
         padding: 10px 20px;
     }
 }
+/* =========================
+   SERVICES SECTION FIX
+========================= */
+
+.services{
+    background-color: #121212;
+    color: #ffffff;
+    padding: 80px 20px;
+}
+
+.services h1,
+.services h2,
+.services h3,
+.services h4,
+.services h5,
+.services h6{
+    color: #00ff88;
+}
+
+.services p{
+    color: #d6d6d6;
+}
+
+.services .card{
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: 1px solid #2e2e2e;
+}
+
+.services .card p{
+    color: #d6d6d6;
+}
+
+.services .card:hover{
+    border-color: #00ff88;
+}
