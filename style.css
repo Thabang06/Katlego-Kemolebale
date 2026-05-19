@@ -1,56 +1,258 @@
-body {
-  background: white;
-  color: limegreen;
-  font-family: Arial;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  text-color: white;
+/* =========================
+   GLOBAL STYLING
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-nav {
-  background: #111;
-  padding: 15px;
+
+body{
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
 }
-h1 {
-  color: red;
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background-color: #111111 !important;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
-section {
-  padding: 50px 20px
+
+.navbar-brand{
+    color: #00ff88 !important;
+    font-size: 28px;
+    font-weight: bold;
 }
-/* PORTFOLIO SECTION */
-.portfolio {
-  background: #111;
-  color: white;
+
+.navbar-nav .nav-link{
+    color: #ffffff !important;
+    margin-left: 15px;
+    transition: 0.3s;
 }
-.portfolio h2 {
-  margin-bottom: 30px;
+
+.navbar-nav .nav-link:hover{
+    color: #00ff88 !important;
 }
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(to right, #0d0d0d, #161616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
 }
-.card {
-  background: #1c1c1c;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 300px;
-  transition: 0.3s;
+
+.hero h1{
+    font-size: 60px;
+    color: #00ff88;
+    margin-bottom: 20px;
 }
-.card:hover {
-  transform: scale(1.05);
+
+.hero p{
+    font-size: 20px;
+    color: #d6d6d6;
+    max-width: 700px;
+    margin: auto;
 }
-.card img {
-  width: 100%
-  height: 200px
-  object-fit: cover;
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+    padding: 80px 20px;
+    background-color: #161616;
 }
-.card h3 {
-  margin: 15px 0 10px;
-  color: limegreen;
+
+section:nth-child(even){
+    background-color: #121212;
 }
-.card p {
-  padding: 0 15px 20 px
+
+.container{
+    width: 90%;
+    margin: auto;
 }
-  
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1, h2, h3{
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+p{
+    color: #d0d0d0;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CARDS / PROJECTS
+========================= */
+
+.card{
+    background-color: #1c1c1c;
+    border: 1px solid #2b2b2b;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    color: white;
+    margin-top: 20px;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    border-color: #00ff88;
+    box-shadow: 0 0 20px rgba(0,255,136,0.2);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-title{
+    color: #00ff88;
+    font-size: 24px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    background-color: #00ff88;
+    color: #000000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #00cc6e;
+    color: white;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+}
+
+form input:focus,
+form textarea:focus{
+    border-color: #00ff88;
+    outline: none;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+    color: #00ff88;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: #111111;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons a{
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: #00ff88;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width: 768px){
+
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .navbar{
+        padding: 10px 20px;
+    }
+}
