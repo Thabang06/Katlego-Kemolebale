@@ -292,3 +292,29 @@ footer{
 .services .card:hover{
     border-color: #00ff88;
 }
+/* SERVICES SECTION TEXT COLOR FIX */
+
+#services{
+    background-color: #121212;
+}
+
+#services h1,
+#services h2,
+#services h3,
+#services h4,
+#services h5,
+#services h6,
+#services p,
+#services li,
+#services span{
+    color: white !important;
+}
+
+#services .card{
+    background-color: #1c1c1c !important;
+    border: 1px solid #333;
+}
+
+#services .card-body{
+    color: white !important;
+}
